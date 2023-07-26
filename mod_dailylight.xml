@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="4" client="site" method="upgrade">
 	<name>MOD_DAILYLIGHT</name>
-	<creationDate>29th May, 2023</creationDate>
+	<creationDate>26th July, 2023</creationDate>
 	<author>Llewellyn van der Merwe</author>
 	<authorEmail>joomla@vdm.io</authorEmail>
-	<authorUrl>https://www.vdm.io/</authorUrl>
+	<authorUrl>https://getbible.net</authorUrl>
 	<copyright>Copyright (C) 2015. All Rights Reserved</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>1.1.2</version>
+	<version>1.1.3</version>
 	<description>MOD_DAILYLIGHT_XML_DESCRIPTION</description>
 
 	<!-- Scripts to run on installation -->
@@ -202,10 +202,12 @@
 			default="1"
 			showon="type:1">
 			<!-- Option Set. -->
+			<option value="2">
+				MOD_DAILYLIGHT_GETBIBLE</option>
 			<option value="1">
-				MOD_DAILYLIGHT_YES</option>
+				MOD_DAILYLIGHT_TELEGRAM</option>
 			<option value="0">
-				MOD_DAILYLIGHT_NO</option>
+				MOD_DAILYLIGHT_NONE</option>
 		</field>
 		<!-- Show_date_footer Field. Type: Radio. (joomla) -->
 		<field
