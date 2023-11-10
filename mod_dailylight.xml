@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="4" client="site" method="upgrade">
 	<name>MOD_DAILYLIGHT</name>
-	<creationDate>9th November, 2023</creationDate>
+	<creationDate>10th November, 2023</creationDate>
 	<author>Llewellyn van der Merwe</author>
 	<authorEmail>joomla@vdm.io</authorEmail>
 	<authorUrl>https://getbible.net</authorUrl>
@@ -192,18 +192,17 @@
 			step="10"
 			showon="show_comments:1"
 		/>
-		<!-- Link Field. Type: Radio. (joomla) -->
+		<!-- Link Field. Type: List. (joomla) -->
 		<field
-			type="radio"
+			type="list"
 			name="link"
 			label="MOD_DAILYLIGHT_LINK_LABEL"
 			description="MOD_DAILYLIGHT_LINK_DESCRIPTION"
-			class="btn-group btn-group-yesno"
+			class="list_class"
+			multiple="false"
 			default="1"
 			showon="type:1">
 			<!-- Option Set. -->
-			<option value="2">
-				MOD_DAILYLIGHT_GETBIBLE</option>
 			<option value="1">
 				MOD_DAILYLIGHT_TELEGRAM</option>
 			<option value="0">
