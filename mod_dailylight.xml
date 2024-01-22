@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.10" client="site" method="upgrade">
 	<name>MOD_DAILYLIGHT</name>
-	<creationDate>23rd December, 2023</creationDate>
+	<creationDate>22nd January, 2024</creationDate>
 	<author>Llewellyn van der Merwe</author>
 	<authorEmail>joomla@vdm.io</authorEmail>
 	<authorUrl>https://getbible.net</authorUrl>
