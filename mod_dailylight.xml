@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.10" client="site" method="upgrade">
+<extension type="module" version="4.0" client="site" method="upgrade">
 	<name>MOD_DAILYLIGHT</name>
 	<creationDate>29th January, 2024</creationDate>
 	<author>Llewellyn van der Merwe</author>
@@ -7,7 +7,7 @@
 	<authorUrl>https://getbible.net</authorUrl>
 	<copyright>Copyright (C) 2015. All Rights Reserved</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>1.1.3</version>
+	<version>1.1.5</version>
 	<description>MOD_DAILYLIGHT_XML_DESCRIPTION</description>
 
 	<!-- Scripts to run on installation -->

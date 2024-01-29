@@ -29,7 +29,7 @@ $target = $params->get('time_of_day', 3);
 $times = ($target == 3) ? ['morning', 'evening']:(($target == 1) ? ['morning']:['evening']);
 
 // get the module class sfx (local)
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx', ''), ENT_COMPAT, 'UTF-8');
 
 // load the default Tmpl
 require JModuleHelper::getLayoutPath('mod_dailylight', $params->get('layout', 'default'));

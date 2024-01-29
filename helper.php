@@ -228,7 +228,7 @@ class ModDailyLightHelper
 			$userpic = $this->getUserPic();
 
 			// set the daily light
-			$this->telegram[$time] = "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" data-telegram-post=\"daily_light/$id\" data-width=\"$width%\"${color}${userpic}${dark}></script>";
+			$this->telegram[$time] = "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" data-telegram-post=\"daily_light/$id\" data-width=\"$width%\"{$color}{$userpic}{$dark}></script>";
 		}
 	}
 
@@ -280,7 +280,7 @@ class ModDailyLightHelper
 			$colorful = $this->getCommentColorful();
 
 			// set the script
-			$this->comments[$time] = "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" data-telegram-discussion=\"daily_light/$id\" data-comments-limit=\"$limit\"${colorful}${height}${color}${dark}></script>";
+			$this->comments[$time] = "<script async src=\"https://telegram.org/js/telegram-widget.js?22\" data-telegram-discussion=\"daily_light/$id\" data-comments-limit=\"$limit\"{$colorful}{$height}{$color}{$dark}></script>";
 		}
 	}
 

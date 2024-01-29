@@ -1,4 +1,4 @@
-# Dailylight (1.1.3)
+# Dailylight (1.1.5)
 
 Display the daily light from [https://git.vdm.dev/christian/daily-light](https://git.vdm.dev/christian/daily-light).
 
@@ -11,7 +11,7 @@ Display the daily light from [https://git.vdm.dev/christian/daily-light](https:/
 + *Name*: [Dailylight](https://getbible.net)
 + *First Build*: 3rd December, 2015
 + *Last Build*: 29th January, 2024
-+ *Version*: 1.1.3
++ *Version*: 1.1.5
 + *Copyright*: Copyright (C) 2015. All Rights Reserved
 + *License*: GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
 
