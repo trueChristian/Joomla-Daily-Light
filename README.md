@@ -10,7 +10,7 @@ Display the daily light from [https://git.vdm.dev/christian/daily-light](https:/
 + *Author*: [Llewellyn van der Merwe](mailto:joomla@vdm.io)
 + *Name*: [Dailylight](https://getbible.net)
 + *First Build*: 3rd December, 2015
-+ *Last Build*: 29th January, 2024
++ *Last Build*: 10th February, 2024
 + *Version*: 1.1.5
 + *Copyright*: Copyright (C) 2015. All Rights Reserved
 + *License*: GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
