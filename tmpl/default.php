@@ -17,6 +17,7 @@
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
+use Joomla\CMS\Language\Text;
 
 
 ?>
@@ -51,7 +52,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php if ($params->get('show_date_footer', 0) == 1): ?>
 				<?php echo $today->date_name; ?>
 			<?php else: ?>
-				<?php echo JText::_('MOD_DAILYLIGHT_DAILY_LIGHT'); ?>
+				<?php echo Text::_('MOD_DAILYLIGHT_DAILY_LIGHT'); ?>
 			<?php endif; ?>
 		</a>
 	<?php else: ?>
@@ -77,5 +78,5 @@ defined('_JEXEC') or die('Restricted access');
 	<?php endforeach; ?>
 </div>
 <?php else: ?>
-	<?php echo JText::_('MOD_DAILYLIGHT_THERE_WAS_AN_ERROR_LOADING_THE_DAILY_LIGHT_PLEASE_TRY_AGAIN_LATTER'); ?>
+	<?php echo Text::_('MOD_DAILYLIGHT_THERE_WAS_AN_ERROR_LOADING_THE_DAILY_LIGHT_PLEASE_TRY_AGAIN_LATTER'); ?>
 <?php endif; ?>
