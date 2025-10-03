@@ -14,22 +14,37 @@
     @license    GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
 
 /------------------------------------------------------------------------------------------------------*/
+namespace TrueChristianBible\Module\DailyLight\Site\Dispatcher;
+
+use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
+use Joomla\CMS\Helper\HelperFactoryAwareInterface;
+use Joomla\CMS\Helper\HelperFactoryAwareTrait;
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-// Include the helper functions only once
-JLoader::register('ModDailyLightHelper', __DIR__ . '/helper.php');
+/**
+ * Dispatcher class for Dailylight
+ *
+ * @since  5.3.0
+ */
+class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareInterface
+{
+	use HelperFactoryAwareTrait;
 
-// get the daily light
-$today = new ModDailyLightHelper($params);
+	/**
+	 * Returns the layout data.
+	 *
+	 * @return  array
+	 *
+	 * @since   5.3.0
+	 */
+	protected function getLayoutData(): array
+	{
+		$data = parent::getLayoutData();
 
-// set the time of day
-$target = $params->get('time_of_day', 3);
-$times = ($target == 3) ? ['morning', 'evening']:(($target == 1) ? ['morning']:['evening']);
+		$data['helper'] = $this->getHelperFactory()->getHelper('DailyLightHelper', $data);
 
-// get the module class sfx (local)
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx', ''), ENT_COMPAT, 'UTF-8');
-
-// load the default Tmpl
-require JModuleHelper::getLayoutPath('mod_dailylight', $params->get('layout', 'default'));
+		return $data;
+	}
+}
